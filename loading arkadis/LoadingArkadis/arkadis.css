@@ -1,0 +1,187 @@
+body{
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+}
+
+.RotatingLoader {
+    width: 5em;
+    height: 5em;
+    position: fixed;
+    top: 36%;
+    left: 935px;
+    border-radius: 50%;
+    border-top: 5px solid red;
+    animation: round 1s linear infinite;
+}
+
+@keyframes round {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+.loader{
+    position: fixed;
+    top: 40%;
+    left: 1010px;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+.lettre{
+    color: #ffaa00;
+    letter-spacing: 10px;
+    animation: flash 1.2s linear infinite;
+    background-color: transparent;
+}
+
+@keyframes flash {
+    0% {
+        color: red;
+        text-shadow: 0 0 7px #fff900;
+    }
+    90% {
+        color: red;
+        text-shadow: none;
+    }
+    100% {
+        color: #fffb00ef;
+        text-shadow: 0 0 7px #fff900;
+    }
+}
+
+.lettre:nth-child(1) {
+    animation-delay: 0.1s; 
+}
+.lettre:nth-child(2) {
+    animation-delay: 0.2s; 
+}
+.lettre:nth-child(3) {
+    animation-delay: 0.3s; 
+}
+.lettre:nth-child(4) {
+    animation-delay: 0.4s; 
+}
+.lettre:nth-child(5) {
+    animation-delay: 0.5s; 
+}
+.lettre:nth-child(6) {
+    animation-delay: 0.6s; 
+}
+.lettre:nth-child(7) {
+    animation-delay: 0.7s; 
+}
+.lettre:nth-child(8) {
+    animation-delay: 0.8s; 
+}
+.lettre:nth-child(9) {
+    animation-delay: 0.9s; 
+}
+.lettre:nth-child(10) {
+    animation-delay: 1s; 
+}
+
+.fondu-out{
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.ServerName{
+    color: red;
+    position: fixed;
+    top: 25%;
+    left: 900px;
+    letter-spacing: 10px;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.title{
+    position: fixed;
+    color: red;
+    top: 18%;
+    left: 850px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    color: red;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-radius: 5px;
+    border: 1px outset black;
+    position: absolute;
+    top: 650px;
+    left: 760px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.container > li {
+    height: 14px;
+    padding: 8px;
+}
+
+ul > li:nth-child(even) {
+    background-color: rgb(25 25 25);
+}
+
+ul > li:nth-child(odd) {
+    background-color: rgb(30, 30, 30);
+}
+
+.material-icons.md-36 { 
+    font-size: 48px;
+    color: red; 
+    position: fixed;
+    top: 50%;
+    left: 50.5%;
+    
+}
+
+.titrerules{
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 57%;
+    left: 48.5%;
+}
+
+.CopyRight {
+    text-decoration: none;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+}
+
+.CopyRight::before{
+    color: white;
+    content: '@Create By';
+}
+
+.CPLogo{
+    position: absolute;
+    top: -130%;
+    left: 100%;
+    width: 70px;
+    height: 70px;
+    z-index: -1;
+}
