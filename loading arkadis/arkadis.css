@@ -166,4 +166,9 @@ ul > li:nth-child(odd) {
 }
 
 .CopyRight {
+    text-decoration: none;
+}
+
+.CopyRight::before{
+    content: '@Create By';
 }
